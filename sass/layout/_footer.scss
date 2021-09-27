@@ -1,0 +1,126 @@
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__wrapper {
+        display: flex;
+    }
+    &__title {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+.footer-address {
+    margin-right: 70px;
+
+    &__list {
+        margin-top: 20px;
+    }
+    &__item {
+        margin-top: 10px;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em; 
+    }
+    &__text {
+        font-style: normal;
+        color: #FFFFFF;
+    }
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+.footer-social {
+
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        width: 44px;
+        height: 44px;
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: var(--secondary-color);
+        }
+    }
+    &__icon {
+        fill: currentColor;
+    }
+}
+.footer-form {
+    margin-left: auto;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__input {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        height: 50px;
+        width: 358px;
+        padding-left: 15px;
+        background-color: inherit;
+        color: #ffffff;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    &__btn {
+        margin-left: 12px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--secondary-color);
+        border: 1px solid var(--secondary-color);
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        padding: 10px 29px;
+        cursor: pointer;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+    }
+    &__icon {
+        fill: #ffffff;
+        margin-left: 10px;
+    }
+}
