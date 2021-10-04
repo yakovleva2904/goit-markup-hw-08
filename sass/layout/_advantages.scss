@@ -1,16 +1,11 @@
-.advantage{
-    padding: 97px 0 3px;
+.advantage {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     &__list {
-        display: flex;
-    }
-    &__item {
-        margin-right: 30px;
-        flex-basis: calc(100% / 4 - 30px);
-
-        &:last-child {
-            margin-right: 0;
-        }
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: auto;
     }
     &__icon {
         height: 120px;
@@ -21,6 +16,7 @@
         justify-content: center;
     }
     &__title {
+        text-align: center;
         font-weight: bold;
         font-size: 14px;
         line-height: 1.14;
@@ -35,6 +31,50 @@
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--extra-main-color);
+        padding-bottom: 30px;
     }
+}
+@media (min-width: 768px) {
+    .advantage {
+        &__title {
+            text-align: start;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 768px;
+            margin-right: calc(-1 * 30px);
+        }
 
+        &__item {
+            margin-right: 30px;
+            flex-basis: calc(100% / 2 - 30px);
+
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .advantage {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        &__list {
+            max-width: 1200px;
+        }
+
+        &__item {
+            margin-right: 30px;
+            flex-basis: calc(100% / 4 - 30px);
+
+            &:nth-child(even) {
+                margin-right: 30px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }

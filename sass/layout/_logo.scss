@@ -1,12 +1,11 @@
 .logo {
-    font-family: Raleway, sans-serif;
+    font-family: Raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.17;
+    font-size: 24px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
-    margin-right: 93px;
-    padding: 24px 0 25px;
-
+    padding-top: 16px;
+    padding-bottom: 16px;
     &--accent {
         color: var(--secondary-color);
     }
@@ -15,5 +14,25 @@
     }
     &--light {
         color: #ffffff;
+    }
+}
+@media (min-width: 768px) {
+    .logo {
+        padding-top: 26px;
+        padding-bottom: 26px;
+
+        &--dark {
+            margin-right: 88px;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 1.19;
+
+        &--dark {
+            margin-right: 93px;
+        }
     }
 }
