@@ -75,10 +75,10 @@
         letter-spacing: 0.01em;
         color: var(--extra-main-color);
         text-transform: capitalize;
-        margin-bottom: 4px;
     }
 
     &__input {
+        margin-top: 4px;
         margin-bottom: 10px;
         position: relative;
     }
@@ -112,6 +112,7 @@
     }
 
     &__textarea {
+        margin-top: 4px;
         height: 120px;
         width: 100%;
         border: 1px solid rgba(33, 33, 33, 0.2);

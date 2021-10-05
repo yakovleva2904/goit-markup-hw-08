@@ -1,5 +1,5 @@
 .team {
-   background-color: #F5F4FA;
+    background-color: #F5F4FA;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -20,8 +20,18 @@
         border-radius: 0px 0px 4px 4px;
         background-color: #ffffff;
     }
+    &__thumb {
+        display: block;
+        margin: 0;
+        max-width: 100%;
+        height: auto;
+    }
+    &__img {
+        width: 100%;
+    }
     &__wrapper {
         padding-top: 30px;
+        padding-bottom: 24px;
     }
     &__title {
         font-weight: 500;
@@ -29,7 +39,7 @@
         line-height: 1.1875;
         letter-spacing: 0.03em;
         text-align: center;
-       margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     &__description {
@@ -46,7 +56,6 @@
     &__list {
         display: flex;
         justify-content: center;
-        padding-bottom: 24px;
     }
     &__item {
         margin-right: 10px;
@@ -103,6 +112,7 @@
 
         &__list {
             flex-wrap: nowrap;
+            max-width: 1200px;
         }
 
         &__item {
