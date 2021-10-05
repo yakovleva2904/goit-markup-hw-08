@@ -440,6 +440,7 @@ img {
 }
 
 .hero__button {
+  cursor: pointer;
   min-width: 200px;
   padding: 10px 32px;
   background-color: var(--secondary-color);
@@ -890,6 +891,7 @@ img {
 }
 
 .product-list__text {
+  overflow: scroll;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1022,6 +1024,7 @@ img {
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .modal-close__icon {
